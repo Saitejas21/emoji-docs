@@ -2,18 +2,19 @@ import React, { useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  const [likeCounter, setLikeCounter] = useState(0);
+  var [userInput, setUserInput] = useState("");
 
-  function likeClickHandler() {
-    var newLikeCounterValue = likeCounter + 1;
-    setLikeCounter(newLikeCounterValue);
+  function inputChangeHandler(event) {
+    console.log(event.target.value);
+    setUserInput(event.target.value);
   }
 
   return (
     <div className="App">
       <h1>Welcome to Emoji Docs</h1>
       <h2>Search your emoji and know about it.</h2>
-      <button onClick={likeClickHandler}>Like me !!</button> {likeCounter}
+      <input onChange={inputChangeHandler}></input>
+      <div> Welcome {userInput} </div>
     </div>
   );
 }
