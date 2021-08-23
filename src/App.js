@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./styles.css";
 
+var shoppingList = ["milk", "eggs", "bread", "flowers"];
+
 export default function App() {
   var [userInput, setUserInput] = useState("");
 
@@ -15,6 +17,11 @@ export default function App() {
       <h2>Search your emoji and know about it.</h2>
       <input onChange={inputChangeHandler}></input>
       <div> Welcome {userInput} </div>
+      <ul>
+        {shoppingList.map(function (item) {
+          return <li>{item}</li>;
+        })}
+      </ul>
     </div>
   );
 }
