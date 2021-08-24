@@ -1,7 +1,9 @@
 .App {
-  font-family: sans-serif;
-  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 input {
   padding: 1.5rem;
