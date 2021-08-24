@@ -36,7 +36,7 @@ var emojiDatabase = {
   "🍄": "Mushroom",
   "🥜": "Peanuts",
   "🌰": "Chestnut"
-};
+}; //add more emojis here to update database.
 
 var emojisWeKnow = Object.keys(emojiDatabase);
 
