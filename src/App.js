@@ -48,8 +48,8 @@ export default function App() {
     var meaning = emojiDatabase[userInput];
     if (meaning === undefined) {
       meaning = "we dont have this in our database";
-      setMeaning(meaning);
     }
+    setMeaning(meaning);
   }
   function emojiClickHandler(emoji) {
     var meaning = emojiDatabase[emoji];

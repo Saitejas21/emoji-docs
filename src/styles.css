@@ -8,4 +8,14 @@
 input {
   padding: 1.5rem;
   width: 80%;
+  border-radius: 0.75rem;
+}
+
+h1 {
+  background-color: #fcd34d;
+  padding: 2rem;
+  color: #064e3b;
+  margin: none;
+  margin-left: none;
+  border-radius: 1rem;
 }
